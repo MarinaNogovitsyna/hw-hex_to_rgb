@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+
+.wrapper {
+  height: 100vh;
+}
+
+.container {
+  width: 15%;
+  margin: auto;
+  padding-top: 50vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.color {
+  padding: 10px;
+}
+
+.rgb {
+  color: white;
+  text-align: center;
+  position: relative;
+  padding: 10px 0;
+}
+
+.rgb::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+}
